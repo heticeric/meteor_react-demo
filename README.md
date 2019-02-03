@@ -1,2 +1,3 @@
-# 02-meteor_react
-Meteor with React.js
+# Meteor.js with React.js
+
+A step by step discover of the inner workings of React.js
