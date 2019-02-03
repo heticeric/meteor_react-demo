@@ -1,6 +1,6 @@
 # Meteor.js with React.js
 
-A step by step discover of the inner workings of React.js
+A step by step discover of the inner workings of React.js.
 Look in the commits to get a step by step explanation.
 Each of the step gets a number as title.
 
