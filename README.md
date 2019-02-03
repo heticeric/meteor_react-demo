@@ -33,3 +33,6 @@ Use the state of the class componennt to handle the state instead of the interna
 You can use the name of the input in order to refactor the callback event
 @see https://reactjs.org/docs/forms.html#handling-multiple-inputs
 
+# Refactoring in Components
+
+Use Component to omit duplicate code.

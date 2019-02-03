@@ -1,5 +1,7 @@
 import React from 'react';
 
+import Input from "./Input";
+
 class App extends React.Component
 {
   state =
@@ -35,24 +37,18 @@ class App extends React.Component
       <div>
         <h1>Marvellous</h1>
         <section>
-          <div>
-            <label>Login </label>
-            <input
-                name="login"
-                onChange={ this.onChange }
-                type="text"
-                placeholder="Votre login"
+          <Input 
+            label="Login"
+            name="login"
+            onChange={ this.onChange }
+            placeholder="Votre login"
             />
-          </div>
-          <div>
-            <label>Mot de passe </label>
-            <input
-                name="password"
-                onChange={ this.onChange }
-                type="text"
-                placeholder="Votre mot de passe"
-            />
-          </div>
+          <Input 
+            label="Mot de passe"
+            name="password"
+            onChange={ this.onChange }
+            placeholder="Votre mot de passe"
+          />
           <button onClick={ this.onClick }>S'authentifier</button>
         </section>
       </div>
