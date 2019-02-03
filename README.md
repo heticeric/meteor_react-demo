@@ -27,3 +27,9 @@ When you use DOM's elements values instead of React's ones.
 # React controlled components
 
 Use the state of the class componennt to handle the state instead of the internal DOM.
+
+# Handle multiple inputs
+
+You can use the name of the input in order to refactor the callback event
+@see https://reactjs.org/docs/forms.html#handling-multiple-inputs
+

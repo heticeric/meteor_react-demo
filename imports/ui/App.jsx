@@ -8,6 +8,22 @@ class App extends React.Component
     ,password : ""
   }
 
+  /**
+   * Handle the change event of each of the inputs
+   * 
+   * @param e Event object
+   */
+  onChange = e =>
+  {
+    // Use ES6 computed property
+    this.setState
+    (
+      {
+        [ e.target.name ]: e.target.value
+      }
+    );
+  }
+
   onClick = e =>
   {
     console.log( this.state.login, this.state.password );
@@ -23,7 +39,7 @@ class App extends React.Component
             <label>Login </label>
             <input
                 name="login"
-                onChange={ e => this.setState( { login : e.target.value } ) }
+                onChange={ this.onChange }
                 type="text"
                 placeholder="Votre login"
             />
@@ -32,7 +48,7 @@ class App extends React.Component
             <label>Mot de passe </label>
             <input
                 name="password"
-                onChange={ e => this.setState( { password : e.target.value } ) }
+                onChange={ this.onChange }
                 type="text"
                 placeholder="Votre mot de passe"
             />
