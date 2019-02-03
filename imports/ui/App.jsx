@@ -2,9 +2,15 @@ import React from 'react';
 
 class App extends React.Component
 {
+  state =
+  {
+    login : ""
+    ,password : ""
+  }
+
   onClick = e =>
   {
-    console.log( this.login.value, this.password.value );
+    console.log( this.state.login, this.state.password );
   }
 
   render()
@@ -16,7 +22,8 @@ class App extends React.Component
           <div>
             <label>Login </label>
             <input
-                ref={ el => this.login = el }
+                name="login"
+                onChange={ e => this.setState( { login : e.target.value } ) }
                 type="text"
                 placeholder="Votre login"
             />
@@ -24,7 +31,8 @@ class App extends React.Component
           <div>
             <label>Mot de passe </label>
             <input
-                ref={ el => this.password = el }
+                name="password"
+                onChange={ e => this.setState( { password : e.target.value } ) }
                 type="text"
                 placeholder="Votre mot de passe"
             />
