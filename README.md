@@ -18,3 +18,8 @@ Remove all unecessary files.
 ```sh
 meteor run
 ```
+
+# React uncontrolled components
+
+When you use DOM's elements values instead of React's ones.
+@see https://reactjs.org/docs/uncontrolled-components.html
